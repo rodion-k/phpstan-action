@@ -65,7 +65,7 @@ runs:
   using: "composite"
   steps:
     - env:
-        ACTION_TOKEN: ${{ github.token }}
+        ACTION_TOKEN: ${{ inputs.github_token }}
         ACTION_VERSION: ${{ inputs.version }}
         ACTION_PHP_VERSION: ${{ inputs.php_version }}
         ACTION_PHPSTAN_PATH: ${{ inputs.vendored_phpstan_path }}
